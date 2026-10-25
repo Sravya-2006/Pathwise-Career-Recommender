@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pathwise — Career & study planner</title>
+    <meta
+      name="description"
+      content="Explore post-UG careers, higher education and certifications with transparent hybrid recommendations."
+    />
+    <link rel="icon" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <aside>
+      <a class="brand" href="#">
+        <span class="brandmark">p</span>
+        pathwise
+        <span class="branddot">.</span>
+      </a>
+      <div class="workspace">STUDENT WORKSPACE</div>
+      <nav aria-label="Main navigation">
+        <button data-view="explore" class="active">
+          ◈
+          <span>Pathway explorer</span>
+        </button>
+        <button data-view="profile">
+          ◎
+          <span>My profile</span>
+        </button>
+        <button data-view="roadmap">
+          ↗
+          <span>My roadmap</span>
+        </button>
+        <button data-view="research">
+          ▥
+          <span>Research lab</span>
+        </button>
+      </nav>
+      <div class="aside-note">
+        <span class="tiny">A NOTE BEFORE YOU START</span>
+        <h3>
+          A plan you can
+          <br />
+          make your own.
+        </h3>
+        <p>
+          Use your shortlist as a starting point. Compare the requirements, then choose
+          what you want to work towards.
+        </p>
+        <div class="orbit">↗</div>
+      </div>
+      <div class="aside-bottom">
+        <span class="avatar">A</span>
+        <div>
+          Student workspace
+          <small>ML course project</small>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <header>
+        <span>
+          Workspace
+          <span class="slash">/</span>
+          <b id="breadcrumb">Pathway explorer</b>
+        </span>
+        <span class="demo-badge">◌ Synthetic-data demo</span>
+      </header>
+      <div id="app"></div>
+      <footer>
+        Pathwise · Post-UG decision support
+        <span>Recommendations are exploratory, not guarantees.</span>
+      </footer>
+    </main>
+    <dialog id="details"><div id="detail-content"></div></dialog>
+    <div id="toast" role="status"></div>
+    <script src="assets/js/engine.js"></script>
+    <script src="assets/js/roadmaps.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/assessment.js"></script>
+  </body>
+</html>
